@@ -1,0 +1,82 @@
+.retroCard {
+  height: fit-content;
+  width: 90%;
+
+  padding: 5%;
+  padding-bottom: 0;
+
+  border: 2px solid;
+  border-radius: 10px;
+
+  color: #fff;
+}
+
+.retro-card-content {
+  word-break: break-word;
+  text-align: left;
+}
+
+.retro-card-options {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+
+  bottom: 0;
+}
+
+.retro-card-date {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 15px;
+
+  font-size: 0.9vw;
+
+  bottom: 0;
+  margin: auto 0;
+
+  color: #c4c4c4;
+}
+
+.retro-card-btns {
+  display: flex;
+  gap: 0;
+  bottom: 0;
+}
+
+.retro-card-delete {
+  border: none;
+  outline: none;
+  background: none;
+
+  margin: auto 0;
+  padding: 3px 6px;
+
+  display: flex;
+
+  color: #e7e7e7;
+}
+
+.retro-card-delete:hover {
+  cursor: pointer;
+  border-radius: 8px;
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+.retro-card-delete > img {
+  width: 1.2vw;
+}
+
+@media (max-width: 820px) {
+  .retro-card-date {
+    font-size: 0.7rem;
+  }
+
+  .retro-card-btns p {
+    font-size: 0.8rem;
+  }
+
+  .retro-card-delete > img {
+    width: 15px;
+  }
+}

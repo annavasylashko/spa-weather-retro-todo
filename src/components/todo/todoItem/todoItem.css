@@ -1,0 +1,54 @@
+.TodoItem {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+
+  align-self: center;
+
+  height: fit-content;
+  width: 96%;
+
+  padding: 10px;
+
+  border: 2px solid rgba(231, 231, 231, 0.6);
+  border-radius: 10px;
+
+  color: #e7e7e7;
+}
+
+.TodoItem:nth-child(n) {
+  border-color: #bb86fc;
+}
+
+.TodoItem:nth-child(2n) {
+  border-color: #ff7597;
+}
+
+.TodoItem:nth-child(3n) {
+  border-color: #02ddc5;
+}
+
+.todo-item-content {
+  margin: 0;
+  word-break: break-word;
+  text-align: left;
+}
+
+.todo-item-delete {
+  border: none;
+  outline: none;
+  background: none;
+
+  margin: auto 0;
+  padding: 4px 8px;
+
+  display: flex;
+
+  color: #e7e7e7;
+}
+
+.todo-item-delete:hover {
+  cursor: pointer;
+  border-radius: 8px;
+  background-color: rgba(255, 255, 255, 0.2);
+}

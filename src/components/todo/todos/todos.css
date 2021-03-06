@@ -1,0 +1,16 @@
+.Todos {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+
+  align-items: flex-start;
+  align-self: center;
+
+  margin: 5vh auto;
+  padding: 3vh;
+
+  border-radius: 10px;
+  background: rgba(255, 255, 255, 0.1);
+
+  width: 84.5vw;
+}

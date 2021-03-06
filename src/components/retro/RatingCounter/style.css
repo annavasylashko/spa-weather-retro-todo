@@ -1,0 +1,47 @@
+.rating-container {
+  display: flex;
+  flex-direction: row;
+  gap: 2px;
+}
+
+.rating-container p {
+  font-size: 1vw;
+  color: #c4c4c4;
+}
+
+.retro-card-like, .retro-card-dislike {
+  border: none;
+  outline: none;
+  background: none;
+
+  margin: auto 0;
+  padding: 3px 6px;
+
+  display: flex;
+
+  color: #e7e7e7;
+}
+
+.retro-card-like:hover, .retro-card-dislike:hover {
+  cursor: pointer;
+  border-radius: 8px;
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+.retro-card-dislike > img, .retro-card-like > img {
+  width: 1.2vw;
+}
+
+.retro-card-dislike > img {
+  margin-top: 2px;
+}
+
+@media(max-width: 820px) {
+  .rating-container p {
+    font-size: 0.8rem;
+  }
+
+  .retro-card-dislike > img, .retro-card-like > img {
+    width: 15px;
+  }
+}

@@ -1,0 +1,22 @@
+@media (min-width: 820px) {
+  .Retro {
+    padding: 20px;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 10px;
+    background-color: #1f1b24;
+    height: 100%;
+    overflow: hidden;
+  }
+}
+
+@media (max-width: 820px) {
+  .Retro {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 10px;
+  }
+}

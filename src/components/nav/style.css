@@ -1,0 +1,32 @@
+.nav {
+  height: 30px;
+  padding: 1vh 0;
+
+  background-color: #131313;
+  align-items: center;
+
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.nav-list {
+  margin: 0;
+  padding: 0;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  text-align: center;
+
+  list-style: none;
+}
+
+.nav-list * {
+  width: 33%;
+  margin: auto;
+}
+
+.nav-list *:hover {
+  color: #fff;
+}

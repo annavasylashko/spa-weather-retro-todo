@@ -1,0 +1,71 @@
+/* .Todo {
+  margin: 3vh;
+  padding: 3vh;
+
+  border-radius: 10px;
+  background: rgba(255, 255, 255, 0.1);
+
+  max-height: 80vh;
+} */
+
+.todo-inputs {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.todo-inputs > * {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+
+  height: fit-content;
+  width: fit-content;
+
+  border: 2px solid rgba(231, 231, 231, 0.6);
+  border-radius: 10px;
+
+  color: #e7e7e7;
+}
+
+.todo-inputs input,
+.todo-inputs select {
+  outline: none;
+  border: none;
+  background: none;
+
+  margin: 10px;
+
+  color: #e7e7e7;
+  font-size: 1rem;
+}
+
+.todo-inputs select {
+  border: 2px solid rgba(231, 231, 231, 0.6);
+  border-radius: 10px;
+
+  padding: 10px;
+  margin: 0;
+}
+
+.todo-inputs select:hover {
+  cursor: pointer;
+}
+
+.todo-inputs option {
+  color: rgb(46, 46, 46);
+}
+
+.todo-inputs button {
+  outline: none;
+  border: none;
+  background: none;
+
+  color: #e7e7e7;
+  font-size: 1rem;
+}
+
+.todo-inputs button:hover {
+  cursor: pointer;
+  background: rgba(255, 255, 255, 0.2);
+}
