@@ -74,7 +74,7 @@ class NewCard extends React.Component {
           onChange={changeText}
           onKeyPress={onEnter}
           placeholder="Add description..."
-          autofocus="true"
+          autoFocus={true}
         />
         <button className="new-card-btn" onClick={onAddCard}>
           +
