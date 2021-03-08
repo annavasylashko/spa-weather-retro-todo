@@ -1,5 +1,5 @@
 import React from "react";
-import { BrowserRouter as Router, Route } from "react-router-dom";
+import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import Nav from "./components/nav/Nav";
 import Weather from "./components/weather/Weather";
 import Retro from "./components/retro/Retro";
@@ -8,12 +8,14 @@ import "./App.css";
 
 function App() {
   return (
-    <Router>
+    <Router basename="https://annavasylashko.github.io/spa-weather-retro-todo">
       <div className="App">
         <Nav />
-        <Route path="/weather" component={Weather} />
-        <Route path="/retro" component={Retro} />
-        <Route path="/todo" component={Todo} />
+        <Switch>
+          <Route path="/weather" component={Weather} />
+          <Route path="/retro" component={Retro} />
+          <Route path="/todo" component={Todo} />
+        </Switch>
       </div>
     </Router>
   );
